@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>English Fun: Our Hygiene Habits - Kelas 6 SD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mint: { DEFAULT: '#2DD4BF', light: '#CCFBF1', dark: '#0D9488' },
+                        cyan: { DEFAULT: '#06B6D4', light: '#CFFAFE', dark: '#0891B2' },
+                        gold: { DEFAULT: '#F59E0B', light: '#FEF3C7', dark: '#D97706' },
+                    },
+                    fontFamily: {
+                        fredoka: ['Fredoka', 'sans-serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F0FDFA;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Fredoka', cursive;
+        }
+        .touch-none {
+            touch-action: none;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2DD4BF;
+            border-radius: 10px;
+        }
+        .portal-card {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .portal-card:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+<body class="bg-teal-50 min-h-screen text-slate-800 flex flex-col justify-between pb-20 md:pb-0">
+
+    <header class="bg-gradient-to-r from-teal-500 via-cyan-500 to-teal-600 text-white shadow-lg sticky top-0 z-40 rounded-b-2xl">
+        <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-white/20 p-2 rounded-xl backdrop-blur-sm border border-white/30 text-2xl">
+                    🧼
+                </div>
+                <div>
+                    <h1 class="text-lg md:text-xl font-bold leading-tight tracking-wide">Our Hygiene Habits</h1>
+                    <p class="text-xs text-teal-100 font-medium">Bahasa Inggris Kelas 6 SD • Unit Kebersihan Diri</p>
+                </div>
+            </div>
+            <button onclick="speakText('Welcome to English Learning App!')" class="bg-white/20 hover:bg-white/30 p-2 rounded-full text-lg transition active:scale-95" title="Putar Suara Selamat Datang">
+                🔊
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 py-5 flex-1 w-full">
+
+        <!-- ==================== TOPIC 1: COUGHING & SNEEZING ==================== -->
+        <section id="portal1" class="portal-content space-y-6">
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-teal-100">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-3xl bg-teal-100 p-2 rounded-2xl">🤧</span>
+                    <div>
+                        <span class="text-xs font-bold text-teal-600 uppercase tracking-wider bg-teal-50 px-2 py-0.5 rounded-md">Topik 1</span>
+                        <h2 class="text-xl font-bold text-teal-800">Coughing & Sneezing Manners</h2>
+                        <p class="text-xs text-slate-500">(Etika Batuk dan Bersin)</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed bg-teal-50/60 p-3 rounded-2xl border border-teal-100">
+                    <strong class="text-teal-700">Good coughing and sneezing manners</strong> berarti etika batuk dan bersin yang baik. Kita perlu menerapkannya untuk menjaga kebersihan dan membantu melindungi orang lain dari penyebaran kuman <i>(germs)</i>.
+                </p>
+            </div>
+
+            <!-- Interaktif Vocabulary Cards -->
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-teal-100 space-y-3">
+                <h3 class="font-bold text-slate-800 text-md flex items-center gap-2">
+                    <span>📚</span> Vocabulary / Kosakata Utama
+                    <span class="text-xs font-normal text-slate-500">(Ketuk untuk mendengar suara)</span>
+                </h3>
+                <div class="grid grid-cols-2 gap-2.5">
+                    <button onclick="speakText('Cough')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">1. Cough</p>
+                            <p class="text-xs text-slate-600">Batuk</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Sneeze')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">2. Sneeze</p>
+                            <p class="text-xs text-slate-600">Bersin</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Mouth')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">3. Mouth</p>
+                            <p class="text-xs text-slate-600">Mulut</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Nose')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">4. Nose</p>
+                            <p class="text-xs text-slate-600">Hidung</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Tissue')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">5. Tissue</p>
+                            <p class="text-xs text-slate-600">Tisu</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Elbow')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">6. Elbow</p>
+                            <p class="text-xs text-slate-600">Siku</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Wash')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">7. Wash</p>
+                            <p class="text-xs text-slate-600">Mencuci</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Hands')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">8. Hands</p>
+                            <p class="text-xs text-slate-600">Tangan</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Mask')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">9. Mask</p>
+                            <p class="text-xs text-slate-600">Masker</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                    <button onclick="speakText('Germs')" class="bg-teal-50 hover:bg-teal-100 p-3 rounded-2xl text-left border border-teal-100 transition flex justify-between items-center group">
+                        <div>
+                            <p class="font-bold text-teal-900 group-hover:text-teal-700">10. Germs</p>
+                            <p class="text-xs text-slate-600">Kuman</p>
+                        </div>
+                        <span class="text-sm opacity-60">🔊</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- What Should We Do? -->
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-teal-100 space-y-3">
+                <h3 class="font-bold text-slate-800 text-md">💡 What Should We Do? / Apa yang Harus Kita Lakukan?</h3>
+                <div class="space-y-2.5">
+                    <div class="flex items-start gap-3 p-3 bg-cyan-50/70 rounded-2xl border border-cyan-100">
+                        <span class="text-2xl">🧻</span>
+                        <div>
+                            <p class="font-bold text-xs text-cyan-900">1. Cover your mouth and nose with a tissue.</p>
+                            <p class="text-xs text-slate-600">Tutup mulut dan hidungmu dengan tisu.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 bg-cyan-50/70 rounded-2xl border border-cyan-100">
+                        <span class="text-2xl">💪</span>
+                        <div>
+                            <p class="font-bold text-xs text-cyan-900">2. Cough into your elbow.</p>
+                            <p class="text-xs text-slate-600">Batuklah ke arah siku bagian dalam apabila tisu tidak tersedia.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 bg-cyan-50/70 rounded-2xl border border-cyan-100">
+                        <span class="text-2xl">🧼</span>
+                        <div>
+                            <p class="font-bold text-xs text-cyan-900">3. Wash your hands after coughing or sneezing.</p>
+                            <p class="text-xs text-slate-600">Cucilah tanganmu setelah batuk atau bersin.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 bg-cyan-50/70 rounded-2xl border border-cyan-100">
+                        <span class="text-2xl">😷</span>
+                        <div>
+                            <p class="font-bold text-xs text-cyan-900">4. Wear a mask when you have a cough.</p>
+                            <p class="text-xs text-slate-600">Gunakan masker ketika kamu sedang batuk.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 bg-cyan-50/70 rounded-2xl border border-cyan-100">
+                        <span class="text-2xl">🤧</span>
+                        <div>
+                            <p class="font-bold text-xs text-cyan-900">5. Blow your nose into a tissue.</p>
+                            <p class="text-xs text-slate-600">Gunakan tisu ketika membuang ingus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Good Manners -->
+                <div class="bg-emerald-50 rounded-3xl p-4 border border-emerald-200">
+                    <h4 class="font-bold text-emerald-800 text-sm flex items-center gap-1.5 mb-2">
+                        <span>✅</span> Good Manners (Perilaku Baik)
+                    </h4>
+                    <ul class="text-xs space-y-2 text-emerald-950">
+                        <li class="bg-white/80 p-2 rounded-xl">
+                            <strong>• Cover your mouth when you cough.</strong><br>
+                            <span class="text-slate-600">(Tutup mulutmu saat batuk.)</span>
+                        </li>
+                        <li class="bg-white/80 p-2 rounded-xl">
+                            <strong>• Cough into your elbow.</strong><br>
+                            <span class="text-slate-600">(Batuklah ke arah siku bagian dalam.)</span>
+                        </li>
+                        <li class="bg-white/80 p-2 rounded-xl">
+                            <strong>• Wash your hands after coughing or sneezing.</strong><br>
+                            <span class="text-slate-600">(Cuci tanganmu setelah batuk atau bersin.)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bad Manners -->
+                <div class="bg-rose-50 rounded-3xl p-4 border border-rose-200">
+                    <h4 class="font-bold text-rose-800 text-sm flex items-center gap-1.5 mb-2">
+                        <span>❌</span> Bad Manners (Perilaku Tidak Baik)
+                    </h4>
+                    <ul class="text-xs space-y-2 text-rose-950">
+                        <li class="bg-white/80 p-2 rounded-xl">
+                            <strong>• Do not cough with your mouth open.</strong><br>
+                            <span class="text-slate-600">(Jangan batuk dengan mulut terbuka.)</span>
+                        </li>
+                        <li class="bg-white/80 p-2 rounded-xl">
+                            <strong>• Do not sneeze without covering your mouth and nose.</strong><br>
+                            <span class="text-slate-600">(Jangan bersin tanpa menutup mulut dan hidung.)</span>
+                        </li>
+                        <li class="bg-white/80 p-2 rounded-xl">
+                            <strong>• Do not leave a used tissue carelessly.</strong><br>
+                            <span class="text-slate-600">(Jangan meninggalkan tisu bekas sembarangan.)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TOPIC 2: ADVICE EXPRESSIONS ==================== -->
+        <section id="portal2" class="portal-content hidden space-y-6">
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-cyan-100">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-3xl bg-cyan-100 p-2 rounded-2xl">💡</span>
+                    <div>
+                        <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider bg-cyan-50 px-2 py-0.5 rounded-md">Topik 2</span>
+                        <h2 class="text-xl font-bold text-cyan-800">Useful Advice Expressions</h2>
+                        <p class="text-xs text-slate-500">(Ungkapan Memberikan Saran)</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed bg-cyan-50/60 p-3 rounded-2xl border border-cyan-100">
+                    Untuk memberikan saran atau anjuran kebersihan kepada teman, kita menggunakan kata <strong class="text-cyan-700">"should"</strong> (sebaiknya / seharusnya).
+                </p>
+            </div>
+
+            <!-- Pola Kalimat / Grammar Rule -->
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-cyan-100 space-y-3">
+                <h3 class="font-bold text-slate-800 text-md">📐 Pattern / Pola Kalimat:</h3>
+                
+                <div class="bg-gradient-to-r from-amber-400 to-amber-500 text-white p-4 rounded-2xl shadow-sm text-center">
+                    <p class="text-xs opacity-90 mb-1">RUMUS UTAMA</p>
+                    <p class="text-lg font-extrabold tracking-wide font-heading">You should + Verb 1</p>
+                    <p class="text-xs mt-1 text-amber-100">(Kamu sebaiknya / Kamu seharusnya ...)</p>
+                </div>
+
+                <div class="bg-amber-50 rounded-2xl p-3 border border-amber-200 text-xs text-amber-900 space-y-1.5">
+                    <p class="font-bold flex items-center gap-1">⚠️ Aturan Penting:</p>
+                    <p>Kata <strong>"should"</strong> selalu diikuti oleh Kata Kerja Bentuk Dasar <strong>(Verb 1)</strong> tanpa tambahan imbuhan seperti -s / -es / -ing.</p>
+                    <div class="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-amber-200/60">
+                        <div class="text-emerald-700 font-semibold">
+                            ✅ Benar:<br>
+                            <span class="font-normal italic">You should <u>wash</u> your hands.</span>
+                        </div>
+                        <div class="text-rose-600 font-semibold">
+                            ❌ Salah:<br>
+                            <span class="font-normal italic">You should <u>washes</u> your hands.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Cards -->
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-cyan-100 space-y-3">
+                <h3 class="font-bold text-slate-800 text-md">💬 Example Sentences / Contoh Kalimat:</h3>
+                
+                <div class="space-y-2.5">
+                    <div onclick="speakText('You should cough into your elbow')" class="bg-cyan-50/70 hover:bg-cyan-100/80 p-3 rounded-2xl border border-cyan-100 transition cursor-pointer flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-sm text-cyan-950">You should cough into your elbow.</p>
+                            <p class="text-xs text-slate-600">Kamu sebaiknya batuk ke arah siku bagian dalam.</p>
+                        </div>
+                        <span class="text-lg">🔊</span>
+                    </div>
+
+                    <div onclick="speakText('You should wash your hands')" class="bg-cyan-50/70 hover:bg-cyan-100/80 p-3 rounded-2xl border border-cyan-100 transition cursor-pointer flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-sm text-cyan-950">You should wash your hands.</p>
+                            <p class="text-xs text-slate-600">Kamu sebaiknya mencuci tanganmu.</p>
+                        </div>
+                        <span class="text-lg">🔊</span>
+                    </div>
+
+                    <div onclick="speakText('You should blow your nose into a tissue')" class="bg-cyan-50/70 hover:bg-cyan-100/80 p-3 rounded-2xl border border-cyan-100 transition cursor-pointer flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-sm text-cyan-950">You should blow your nose into a tissue.</p>
+                            <p class="text-xs text-slate-600">Kamu sebaiknya membuang ingus menggunakan tisu.</p>
+                        </div>
+                        <span class="text-lg">🔊</span>
+                    </div>
+
+                    <div onclick="speakText('You should wear a mask')" class="bg-cyan-50/70 hover:bg-cyan-100/80 p-3 rounded-2xl border border-cyan-100 transition cursor-pointer flex justify-between items-center">
+                        <div>
+                            <p class="font-bold text-sm text-cyan-950">You should wear a mask.</p>
+                            <p class="text-xs text-slate-600">Kamu sebaiknya memakai masker.</p>
+                        </div>
+                        <span class="text-lg">🔊</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TOPIC 3: PERSONAL HYGIENE ==================== -->
+        <section id="portal3" class="portal-content hidden space-y-6">
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-emerald-100">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="text-3xl bg-emerald-100 p-2 rounded-2xl">🧼</span>
+                    <div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider bg-emerald-50 px-2 py-0.5 rounded-md">Topik 3</span>
+                        <h2 class="text-xl font-bold text-emerald-800">Personal Hygiene Habits</h2>
+                        <p class="text-xs text-slate-500">(Kebiasaan Kebersihan Diri)</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed bg-emerald-50/60 p-3 rounded-2xl border border-emerald-100">
+                    Menjaga kebersihan diri sangat penting agar tubuh tetap sehat, segar, dan terhindar dari penyakit.
+                </p>
+            </div>
+
+            <!-- 6 Kebiasaan Utama -->
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-emerald-100 space-y-3">
+                <h3 class="font-bold text-slate-800 text-md">✨ 6 Main Habits / 6 Kebiasaan Utama</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    
+                    <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 flex items-center gap-3">
+                        <span class="text-3xl">🛁</span>
+                        <div>
+                            <p class="font-bold text-sm text-teal-900">1. Take a bath <span class="font-normal text-xs text-slate-500">(Mandi)</span></p>
+                            <p class="text-xs text-teal-700 italic mt-0.5">"You should take a bath."</p>
+                            <p class="text-[10px] text-slate-500">(Kamu sebaiknya mandi.)</p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 flex items-center gap-3">
+                        <span class="text-3xl">🪥</span>
+                        <div>
+                            <p class="font-bold text-sm text-teal-900">2. Brush your teeth <span class="font-normal text-xs text-slate-500">(Menyikat gigi)</span></p>
+                            <p class="text-xs text-teal-700 italic mt-0.5">"You should brush your teeth."</p>
+                            <p class="text-[10px] text-slate-500">(Kamu sebaiknya menyikat gigi.)</p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 flex items-center gap-3">
+                        <span class="text-3xl">🧏</span>
+                        <div>
+                            <p class="font-bold text-sm text-teal-900">3. Wash your face <span class="font-normal text-xs text-slate-500">(Mencuci wajah)</span></p>
+                            <p class="text-xs text-teal-700 italic mt-0.5">"You should wash your face."</p>
+                            <p class="text-[10px] text-slate-500">(Kamu sebaiknya mencuci wajah.)</p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 flex items-center gap-3">
+                        <span class="text-3xl">🧴</span>
+                        <div>
+                            <p class="font-bold text-sm text-teal-900">4. Wash your hair <span class="font-normal text-xs text-slate-500">(Mencuci rambut)</span></p>
+                            <p class="text-xs text-teal-700 italic mt-0.5">"You should wash your hair."</p>
+                            <p class="text-[10px] text-slate-500">(Kamu sebaiknya mencuci rambut.)</p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 flex items-center gap-3">
+                        <span class="text-3xl">🪮</span>
+                        <div>
+                            <p class="font-bold text-sm text-teal-900">5. Comb your hair <span class="font-normal text-xs text-slate-500">(Menyisir rambut)</span></p>
+                            <p class="text-xs text-teal-700 italic mt-0.5">"You should comb your hair."</p>
+                            <p class="text-[10px] text-slate-500">(Kamu sebaiknya menyisir rambut.)</p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-teal-50/60 rounded-2xl border border-teal-100 flex items-center gap-3">
+                        <span class="text-3xl">💅</span>
+                        <div>
+                            <p class="font-bold text-sm text-teal-900">6. Clip your nails <span class="font-normal text-xs text-slate-500">(Memotong kuku)</span></p>
+                            <p class="text-xs text-teal-700 italic mt-0.5">"You should clip your nails."</p>
+                            <p class="text-[10px] text-slate-500">(Kamu sebaiknya memotong kuku.)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Interactive Situation Table -->
+            <div class="bg-white rounded-3xl p-5 shadow-sm border border-emerald-100 space-y-3">
+                <h3 class="font-bold text-slate-800 text-md">🔍 Situation & Advice / Situasi & Saran</h3>
+                <div class="divide-y divide-slate-100">
+                    
+                    <div class="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-1">
+                        <div>
+                            <p class="text-xs font-semibold text-rose-600">🔴 Situation: Your body is dirty.</p>
+                            <p class="text-[11px] text-slate-500">(Tubuhmu kotor.)</p>
+                        </div>
+                        <div class="bg-emerald-50 p-2 rounded-xl border border-emerald-100 md:text-right">
+                            <p class="text-xs font-bold text-emerald-800">👉 You should take a bath.</p>
+                            <p class="text-[10px] text-slate-600">(Kamu sebaiknya mandi.)</p>
+                        </div>
+                    </div>
+
+                    <div class="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-1">
+                        <div>
+                            <p class="text-xs font-semibold text-rose-600">🔴 Situation: Your teeth are dirty.</p>
+                            <p class="text-[11px] text-slate-500">(Gigimu kotor.)</p>
+                        </div>
+                        <div class="bg-emerald-50 p-2 rounded-xl border border-emerald-100 md:text-right">
+                            <p class="text-xs font-bold text-emerald-800">👉 You should brush your teeth.</p>
+                            <p class="text-[10px] text-slate-600">(Kamu sebaiknya menyikat gigi.)</p>
+                        </div>
+                    </div>
+
+                    <div class="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-1">
+                        <div>
+                            <p class="text-xs font-semibold text-rose-600">🔴 Situation: Your face is dirty.</p>
+                            <p class="text-[11px] text-slate-500">(Wajahmu kotor.)</p>
+                        </div>
+                        <div class="bg-emerald-50 p-2 rounded-xl border border-emerald-100 md:text-right">
+                            <p class="text-xs font-bold text-emerald-800">👉 You should wash your face.</p>
+                            <p class="text-[10px] text-slate-600">(Kamu sebaiknya mencuci wajah.)</p>
+                        </div>
+                    </div>
+
+                    <div class="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-1">
+                        <div>
+                            <p class="text-xs font-semibold text-rose-600">🔴 Situation: Your hair is dirty.</p>
+                            <p class="text-[11px] text-slate-500">(Rambutmu kotor.)</p>
+                        </div>
+                        <div class="bg-emerald-50 p-2 rounded-xl border border-emerald-100 md:text-right">
+                            <p class="text-xs font-bold text-emerald-800">👉 You should wash your hair.</p>
+                            <p class="text-[10px] text-slate-600">(Kamu sebaiknya mencuci rambut.)</p>
+                        </div>
+                    </div>
+
+                    <div class="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-1">
+                        <div>
+                            <p class="text-xs font-semibold text-rose-600">🔴 Situation: Your hair is messy.</p>
+                            <p class="text-[11px] text-slate-500">(Rambutmu berantakan.)</p>
+                        </div>
+                        <div class="bg-emerald-50 p-2 rounded-xl border border-emerald-100 md:text-right">
+                            <p class="text-xs font-bold text-emerald-800">👉 You should comb your hair.</p>
+                            <p class="text-[10px] text-slate-600">(Kamu sebaiknya menyisir rambut.)</p>
+                        </div>
+                    </div>
+
+                    <div class="py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-1">
+                        <div>
+                            <p class="text-xs font-semibold text-rose-600">🔴 Situation: Your nails are long.</p>
+                            <p class="text-[11px] text-slate-500">(Kukumu panjang.)</p>
+                        </div>
+                        <div class="bg-emerald-50 p-2 rounded-xl border border-emerald-100 md:text-right">
+                            <p class="text-xs font-bold text-emerald-800">👉 You should clip your nails.</p>
+                            <p class="text-[10px] text-slate-600">(Kamu sebaiknya memotong kuku.)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ASSESSMENT / TUGAS ==================== -->
+        <section id="portal4" class="portal-content hidden space-y-6">
+            
+            <!-- STEP A: FORM START -->
+            <div id="quizStartStep" class="bg-white rounded-3xl p-6 shadow-md border border-amber-200 text-center space-y-4">
+                <div class="text-5xl my-2">📝</div>
+                <h2 class="text-2xl font-bold text-amber-900">Tugas & Asesmen Formatif</h2>
+                <p class="text-xs text-slate-600 leading-relaxed max-w-md mx-auto">
+                    Uji pemahamanmu tentang <i>Our Hygiene Habits</i>! Terdiri dari 15 soal (Matching, Pilihan Ganda, & True/False).
+                </p>
+
+                <div class="bg-amber-50 p-4 rounded-2xl border border-amber-200 text-left space-y-3 max-w-sm mx-auto">
+                    <label class="block text-xs font-bold text-amber-900">Nama Lengkap Siswa / Student's Full Name:</label>
+                    <input type="text" id="studentNameInput" placeholder="Ketik nama lengkapmu di sini..." class="w-full px-3 py-2.5 text-sm rounded-xl border border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                    <p id="nameError" class="text-rose-500 text-xs hidden">⚠️ Harap isi nama lengkap sebelum memulai!</p>
+                </div>
+
+                <button onclick="startAssessment()" class="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold px-8 py-3 rounded-2xl shadow-lg hover:brightness-105 active:scale-95 transition">
+                    🚀 Mulai Asesmen / Start Assessment
+                </button>
+            </div>
+
+            <!-- STEP B: QUIZ FORM -->
+            <div id="quizContentStep" class="hidden space-y-6">
+                <div class="bg-amber-100/80 p-3 rounded-2xl flex justify-between items-center border border-amber-200">
+                    <div class="flex items-center gap-2">
+                        <span>👤</span>
+                        <span id="displayStudentName" class="font-bold text-xs text-amber-900">Siswa</span>
+                    </div>
+                    <span class="text-xs bg-amber-200 text-amber-900 px-2.5 py-1 rounded-lg font-bold">Total: 15 Soal</span>
+                </div>
+
+                <!-- BAGIAN A: MATCHING -->
+                <div class="bg-white rounded-3xl p-5 shadow-sm border border-amber-200 space-y-4">
+                    <div class="border-b pb-2">
+                        <span class="bg-amber-50 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Bagian A</span>
+                        <h3 class="font-bold text-slate-800 text-sm mt-1">MENJODOHKAN / MATCHING (Soal 1–5)</h3>
+                        <p class="text-xs text-slate-500">Tarik garis menggunakan jari/mouse dari kata di kiri ke jawaban yang tepat di kanan!</p>
+                    </div>
+
+                    <div class="relative w-full" id="matchingContainer">
+                        <canvas id="matchingCanvas" class="absolute top-0 left-0 w-full h-full pointer-events-none z-10"></canvas>
+                        
+                        <div class="grid grid-cols-2 gap-4 relative z-20">
+                            <!-- Left Column -->
+                            <div class="space-y-4">
+                                <div data-left="1" onclick="handlePointClick('left', 1, event)" class="matching-node-left bg-teal-50 border-2 border-teal-300 p-2.5 rounded-2xl text-xs font-bold text-teal-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <span>1. Tissue</span>
+                                    <div class="w-3.5 h-3.5 rounded-full bg-teal-500 border-2 border-white"></div>
+                                </div>
+                                <div data-left="2" onclick="handlePointClick('left', 2, event)" class="matching-node-left bg-teal-50 border-2 border-teal-300 p-2.5 rounded-2xl text-xs font-bold text-teal-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <span>2. Elbow</span>
+                                    <div class="w-3.5 h-3.5 rounded-full bg-teal-500 border-2 border-white"></div>
+                                </div>
+                                <div data-left="3" onclick="handlePointClick('left', 3, event)" class="matching-node-left bg-teal-50 border-2 border-teal-300 p-2.5 rounded-2xl text-xs font-bold text-teal-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <span>3. Take a bath</span>
+                                    <div class="w-3.5 h-3.5 rounded-full bg-teal-500 border-2 border-white"></div>
+                                </div>
+                                <div data-left="4" onclick="handlePointClick('left', 4, event)" class="matching-node-left bg-teal-50 border-2 border-teal-300 p-2.5 rounded-2xl text-xs font-bold text-teal-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <span>4. Comb your hair</span>
+                                    <div class="w-3.5 h-3.5 rounded-full bg-teal-500 border-2 border-white"></div>
+                                </div>
+                                <div data-left="5" onclick="handlePointClick('left', 5, event)" class="matching-node-left bg-teal-50 border-2 border-teal-300 p-2.5 rounded-2xl text-xs font-bold text-teal-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <span>5. Brush your teeth</span>
+                                    <div class="w-3.5 h-3.5 rounded-full bg-teal-500 border-2 border-white"></div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="space-y-4">
+                                <div data-right="A" onclick="handlePointClick('right', 'A', event)" class="matching-node-right bg-amber-50 border-2 border-amber-300 p-2.5 rounded-2xl text-xs font-bold text-amber-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <div class="w-3.5 h-3.5 rounded-full bg-amber-500 border-2 border-white"></div>
+                                    <span class="text-right">A. Mandi</span>
+                                </div>
+                                <div data-right="B" onclick="handlePointClick('right', 'B', event)" class="matching-node-right bg-amber-50 border-2 border-amber-300 p-2.5 rounded-2xl text-xs font-bold text-amber-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <div class="w-3.5 h-3.5 rounded-full bg-amber-500 border-2 border-white"></div>
+                                    <span class="text-right">B. Menyisir rambut</span>
+                                </div>
+                                <div data-right="C" onclick="handlePointClick('right', 'C', event)" class="matching-node-right bg-amber-50 border-2 border-amber-300 p-2.5 rounded-2xl text-xs font-bold text-amber-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <div class="w-3.5 h-3.5 rounded-full bg-amber-500 border-2 border-white"></div>
+                                    <span class="text-right">C. Tisu</span>
+                                </div>
+                                <div data-right="D" onclick="handlePointClick('right', 'D', event)" class="matching-node-right bg-amber-50 border-2 border-amber-300 p-2.5 rounded-2xl text-xs font-bold text-amber-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <div class="w-3.5 h-3.5 rounded-full bg-amber-500 border-2 border-white"></div>
+                                    <span class="text-right">D. Siku</span>
+                                </div>
+                                <div data-right="E" onclick="handlePointClick('right', 'E', event)" class="matching-node-right bg-amber-50 border-2 border-amber-300 p-2.5 rounded-2xl text-xs font-bold text-amber-900 flex justify-between items-center cursor-pointer active:scale-95 transition">
+                                    <div class="w-3.5 h-3.5 rounded-full bg-amber-500 border-2 border-white"></div>
+                                    <span class="text-right">E. Menyikat gigi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center text-[11px] text-slate-500 pt-2">
+                        <span>💡 Tip: Ketuk item kiri lalu ketuk item kanan untuk menyambungkan.</span>
+                        <button onclick="resetMatchingLines()" class="text-rose-500 font-bold underline">Reset Garis</button>
+                    </div>
+                </div>
+
+                <!-- BAGIAN B: MULTIPLE CHOICE -->
+                <div class="bg-white rounded-3xl p-5 shadow-sm border border-amber-200 space-y-5">
+                    <div class="border-b pb-2">
+                        <span class="bg-amber-50 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Bagian B</span>
+                        <h3 class="font-bold text-slate-800 text-sm mt-1">PILIHAN GANDA / MULTIPLE CHOICE (Soal 6–10)</h3>
+                        <p class="text-xs text-slate-500">Pilihlah satu jawaban yang paling tepat!</p>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-slate-800">6. Ketika batuk, kita sebaiknya ... / <i>When coughing, we should ...</i></p>
+                        <div class="space-y-1.5 text-xs">
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q6" value="A" class="accent-amber-500 mr-2"> A. Cough into your elbow. (Batuk ke arah siku bagian dalam)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q6" value="B" class="accent-amber-500 mr-2"> B. Comb your hair. (Menyisir rambut)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q6" value="C" class="accent-amber-500 mr-2"> C. Take a bath. (Mandi)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q6" value="D" class="accent-amber-500 mr-2"> D. Clip your nails. (Memotong kuku)
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q7 -->
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-slate-800">7. Arti dari kalimat "Wash your hands" adalah ... / <i>The meaning of "Wash your hands" is ...</i></p>
+                        <div class="space-y-1.5 text-xs">
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q7" value="A" class="accent-amber-500 mr-2"> A. Menyisir rambut.
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q7" value="B" class="accent-amber-500 mr-2"> B. Mencuci tangan.
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q7" value="C" class="accent-amber-500 mr-2"> C. Menyikat gigi.
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q7" value="D" class="accent-amber-500 mr-2"> D. Memotong kuku.
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q8 -->
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-slate-800">8. Jika gigi kotor <i>(If your teeth are dirty)</i>, tindakan yang tepat adalah ...</p>
+                        <div class="space-y-1.5 text-xs">
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q8" value="A" class="accent-amber-500 mr-2"> A. Wash your face. (Mencuci wajah)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q8" value="B" class="accent-amber-500 mr-2"> B. Comb your hair. (Menyisir rambut)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q8" value="C" class="accent-amber-500 mr-2"> C. Brush your teeth. (Menyikat gigi)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q8" value="D" class="accent-amber-500 mr-2"> D. Take a bath. (Mandi)
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q9 -->
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-slate-800">9. Arti dari ungkapan "Clip your nails" adalah ... / <i>The meaning of "Clip your nails" is ...</i></p>
+                        <div class="space-y-1.5 text-xs">
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q9" value="A" class="accent-amber-500 mr-2"> A. Memotong kuku.
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q9" value="B" class="accent-amber-500 mr-2"> B. Mencuci rambut.
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q9" value="C" class="accent-amber-500 mr-2"> C. Mandi.
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q9" value="D" class="accent-amber-500 mr-2"> D. Mencuci wajah.
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q10 -->
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-slate-800">10. Pilih kalimat bahasa Inggris yang berarti "Kamu sebaiknya mencuci wajah."</p>
+                        <div class="space-y-1.5 text-xs">
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q10" value="A" class="accent-amber-500 mr-2"> A. You should comb your hair. (Kamu sebaiknya menyisir rambut.)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q10" value="B" class="accent-amber-500 mr-2"> B. You should take a bath. (Kamu sebaiknya mandi.)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q10" value="C" class="accent-amber-500 mr-2"> C. You should wash your face. (Kamu sebaiknya mencuci wajah.)
+                            </label>
+                            <label class="flex items-center p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-amber-50">
+                                <input type="radio" name="q10" value="D" class="accent-amber-500 mr-2"> D. You should brush your teeth. (Kamu sebaiknya menyikat gigi.)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAGIAN C: TRUE OR FALSE -->
+                <div class="bg-white rounded-3xl p-5 shadow-sm border border-amber-200 space-y-5">
+                    <div class="border-b pb-2">
+                        <span class="bg-amber-50 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">Bagian C</span>
+                        <h3 class="font-bold text-slate-800 text-sm mt-1">BENAR ATAU SALAH / TRUE OR FALSE (Soal 11–15)</h3>
+                        <p class="text-xs text-slate-500">Pilih Benar (True) jika sesuai, atau Salah (False) jika tidak sesuai!</p>
+                    </div>
+
+                    <!-- Q11 -->
+                    <div class="flex items-center justify-between gap-2 p-2.5 bg-slate-50 rounded-2xl border border-slate-200 text-xs">
+                        <span class="font-medium text-slate-800">11. Tissue berarti tisu. <i>(Tissue means tissue.)</i></span>
+                        <div class="flex gap-2 shrink-0">
+                            <label class="px-3 py-1.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q11" value="TRUE" class="accent-emerald-600"> True
+                            </label>
+                            <label class="px-3 py-1.5 bg-rose-100 hover:bg-rose-200 text-rose-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q11" value="FALSE" class="accent-rose-600"> False
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q12 -->
+                    <div class="flex items-center justify-between gap-2 p-2.5 bg-slate-50 rounded-2xl border border-slate-200 text-xs">
+                        <span class="font-medium text-slate-800">12. Elbow berarti rambut. <i>(Elbow means hair.)</i></span>
+                        <div class="flex gap-2 shrink-0">
+                            <label class="px-3 py-1.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q12" value="TRUE" class="accent-emerald-600"> True
+                            </label>
+                            <label class="px-3 py-1.5 bg-rose-100 hover:bg-rose-200 text-rose-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q12" value="FALSE" class="accent-rose-600"> False
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q13 -->
+                    <div class="flex items-center justify-between gap-2 p-2.5 bg-slate-50 rounded-2xl border border-slate-200 text-xs">
+                        <span class="font-medium text-slate-800">13. You should brush your teeth berarti kamu sebaiknya menyikat gigi.</span>
+                        <div class="flex gap-2 shrink-0">
+                            <label class="px-3 py-1.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q13" value="TRUE" class="accent-emerald-600"> True
+                            </label>
+                            <label class="px-3 py-1.5 bg-rose-100 hover:bg-rose-200 text-rose-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q13" value="FALSE" class="accent-rose-600"> False
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q14 -->
+                    <div class="flex items-center justify-between gap-2 p-2.5 bg-slate-50 rounded-2xl border border-slate-200 text-xs">
+                        <span class="font-medium text-slate-800">14. Ketika bersin, kita sebaiknya menutup mulut dan hidung. <i>(When sneezing, we should cover our mouth and nose.)</i></span>
+                        <div class="flex gap-2 shrink-0">
+                            <label class="px-3 py-1.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q14" value="TRUE" class="accent-emerald-600"> True
+                            </label>
+                            <label class="px-3 py-1.5 bg-rose-100 hover:bg-rose-200 text-rose-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q14" value="FALSE" class="accent-rose-600"> False
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Q15 -->
+                    <div class="flex items-center justify-between gap-2 p-2.5 bg-slate-50 rounded-2xl border border-slate-200 text-xs">
+                        <span class="font-medium text-slate-800">15. Comb your hair berarti memotong kuku. <i>(Comb your hair means clip your nails.)</i></span>
+                        <div class="flex gap-2 shrink-0">
+                            <label class="px-3 py-1.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q15" value="TRUE" class="accent-emerald-600"> True
+                            </label>
+                            <label class="px-3 py-1.5 bg-rose-100 hover:bg-rose-200 text-rose-900 rounded-xl cursor-pointer font-bold flex items-center gap-1">
+                                <input type="radio" name="q15" value="FALSE" class="accent-rose-600"> False
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center pt-2">
+                    <button onclick="submitAssessment()" class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-base px-10 py-3.5 rounded-2xl shadow-lg hover:brightness-105 active:scale-95 transition">
+                        ✅ Kumpulkan Tugas / Submit Assignment
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP C: RESULT & DISCUSSION -->
+            <div id="quizResultStep" class="hidden space-y-6">
+                <!-- Score Card -->
+                <div class="bg-white rounded-3xl p-6 shadow-md border border-amber-200 text-center space-y-3">
+                    <div id="badgeIcon" class="text-6xl">🎉</div>
+                    <h2 class="text-xl font-bold text-slate-800">Hasil Asesmen Formatif</h2>
+                    <p class="text-xs text-slate-500">Siswa: <strong id="resultStudentName" class="text-slate-800">Name</strong></p>
+
+                    <div class="bg-gradient-to-r from-amber-400 to-amber-500 text-white p-5 rounded-2xl max-w-xs mx-auto shadow-sm">
+                        <p class="text-xs font-semibold opacity-90">NILAI AKHIR</p>
+                        <p id="finalScoreDisplay" class="text-4xl font-black my-1 font-heading">0 / 100</p>
+                        <p id="correctCountDisplay" class="text-xs text-amber-100">Jawaban Benar: 0 dari 15 Soal</p>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Notice Banner -->
+                <div class="bg-gradient-to-r from-rose-500 via-amber-500 to-rose-600 text-white p-5 rounded-3xl shadow-lg border-2 border-amber-200 space-y-2 text-center animate-pulse">
+                    <div class="text-3xl">📸</div>
+                    <h3 class="font-bold text-sm tracking-wide uppercase">PEMBERITAHUAN PENTING!</h3>
+                    <p class="text-xs font-bold leading-relaxed">
+                        "HARAP SCREENSHOT HALAMAN HASIL INI DAN KIRIMKAN HASILNYA KE WHATSAPP PRIBADI GURU SEBAGAI BUKTI TUGAS!"
+                    </p>
+                    <p class="text-[10px] text-amber-100 italic">
+                        ("Please screenshot this result page and send it to the teacher's WhatsApp as proof of assignment!")
+                    </p>
+                </div>
+
+                <!-- Discussion Section -->
+                <div class="bg-white rounded-3xl p-5 shadow-sm border border-slate-200 space-y-4">
+                    <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
+                        <span>🔍</span> Evaluasi & Pembahasan Belajar
+                    </h3>
+                    <p class="text-xs text-slate-600">
+                        Berikut adalah indikator status jawabanmu. <i>(Kunci jawaban mentah dirahasiakan untuk melatih kemandirian belajar)</i>:
+                    </p>
+
+                    <div id="discussionList" class="space-y-2.5 text-xs">
+                        <!-- Dynamic content filled via JS -->
+                    </div>
+                </div>
+
+                <div class="text-center pt-2">
+                    <button onclick="retryAssessment()" class="bg-slate-700 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-2xl text-xs transition">
+                        🔄 Ulangi Asesmen / Retry Assessment
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- UPDATED NAVIGATION BAR: Renamed Portal labels to Topic Titles -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-slate-200 z-50 rounded-t-2xl shadow-lg">
+        <div class="max-w-3xl mx-auto grid grid-cols-4 px-2 py-1.5">
+            <button onclick="switchPortal(1)" id="nav1" class="flex flex-col items-center justify-center p-2 rounded-xl text-teal-600 font-bold transition">
+                <span class="text-lg">🤧</span>
+                <span class="text-[10px] mt-0.5 text-center leading-tight">Cough & Sneeze</span>
+            </button>
+            <button onclick="switchPortal(2)" id="nav2" class="flex flex-col items-center justify-center p-2 rounded-xl text-slate-400 font-medium transition">
+                <span class="text-lg">💡</span>
+                <span class="text-[10px] mt-0.5 text-center leading-tight">Advice Rules</span>
+            </button>
+            <button onclick="switchPortal(3)" id="nav3" class="flex flex-col items-center justify-center p-2 rounded-xl text-slate-400 font-medium transition">
+                <span class="text-lg">🧼</span>
+                <span class="text-[10px] mt-0.5 text-center leading-tight">Hygiene Habits</span>
+            </button>
+            <button onclick="switchPortal(4)" id="nav4" class="flex flex-col items-center justify-center p-2 rounded-xl text-slate-400 font-medium transition">
+                <span class="text-lg">📝</span>
+                <span class="text-[10px] mt-0.5 text-center leading-tight">Assessment</span>
+            </button>
+        </div>
+    </nav>
+
+    <script>
+        /* ==================== STATE MANAGEMENT & NAV ==================== */
+        let currentPortal = 1;
+        let studentName = "";
+        let matchingPairs = {}; // Left-ID -> Right-ID
+        let selectedLeftNode = null;
+
+        // Correct Answer Keys (Internal Logic)
+        const ANSWER_KEYS = {
+            matching: { 1: 'C', 2: 'D', 3: 'A', 4: 'B', 5: 'E' },
+            mc: { q6: 'A', q7: 'B', q8: 'C', q9: 'A', q10: 'C' },
+            tf: { q11: 'TRUE', q12: 'FALSE', q13: 'TRUE', q14: 'TRUE', q15: 'FALSE' }
+        };
+
+        const EVALUATION_NOTES = {
+            1: "Materi Tissue (Tisu) - Topik Cough & Sneeze.",
+            2: "Materi Elbow (Siku) - Topik Cough & Sneeze.",
+            3: "Materi Take a bath (Mandi) - Topik Hygiene Habits.",
+            4: "Materi Comb your hair (Menyisir rambut) - Topik Hygiene Habits.",
+            5: "Materi Brush your teeth (Menyikat gigi) - Topik Hygiene Habits.",
+            q6: "Materi Etika Batuk (Coughing Manners) - Topik Cough & Sneeze.",
+            q7: "Materi Wash your hands (Mencuci tangan) - Topik Cough & Sneeze.",
+            q8: "Materi Kebersihan Gigi (Teeth hygiene) - Topik Hygiene Habits.",
+            q9: "Materi Clip your nails (Memotong kuku) - Topik Hygiene Habits.",
+            q10: "Materi Ungkapan Saran 'You should wash your face' - Topik Advice Rules.",
+            q11: "Materi Vocabulary Tissue - Topik Cough & Sneeze.",
+            q12: "Materi Vocabulary Elbow (Siku) - Topik Cough & Sneeze.",
+            q13: "Materi Brush your teeth - Topik Hygiene Habits.",
+            q14: "Materi Cover mouth and nose when sneezing - Topik Cough & Sneeze.",
+            q15: "Materi Comb your hair vs Clip your nails - Topik Hygiene Habits."
+        };
+
+        function switchPortal(portalNum) {
+            currentPortal = portalNum;
+            document.querySelectorAll('.portal-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(`portal${portalNum}`).classList.remove('hidden');
+
+            // Update Nav Styles
+            for (let i = 1; i <= 4; i++) {
+                const navBtn = document.getElementById(`nav${i}`);
+                if (i === portalNum) {
+                    navBtn.className = "flex flex-col items-center justify-center p-2 rounded-xl text-teal-600 font-bold transition bg-teal-50/80";
+                } else {
+                    navBtn.className = "flex flex-col items-center justify-center p-2 rounded-xl text-slate-400 font-medium transition";
+                }
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            if (portalNum === 4 && document.getElementById('quizContentStep').classList.contains('hidden') === false) {
+                setTimeout(drawMatchingCanvasLines, 100);
+            }
+        }
+
+        /* ==================== SPEECH SYNTHESIS (TTS) ==================== */
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.85;
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        /* ==================== CANVAS TOUCH MATCHING LOGIC ==================== */
+        const canvas = document.getElementById('matchingCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            const container = document.getElementById('matchingContainer');
+            if (container) {
+                canvas.width = container.offsetWidth;
+                canvas.height = container.offsetHeight;
+                drawMatchingCanvasLines();
+            }
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+
+        function handlePointClick(side, id, event) {
+            if (side === 'left') {
+                selectedLeftNode = id;
+                document.querySelectorAll('.matching-node-left').forEach(el => {
+                    if (el.getAttribute('data-left') == id) {
+                        el.classList.add('ring-2', 'ring-teal-500', 'bg-teal-100');
+                    } else {
+                        el.classList.remove('ring-2', 'ring-teal-500', 'bg-teal-100');
+                    }
+                });
+            } else if (side === 'right' && selectedLeftNode !== null) {
+                matchingPairs[selectedLeftNode] = id;
+                selectedLeftNode = null;
+                document.querySelectorAll('.matching-node-left').forEach(el => {
+                    el.classList.remove('ring-2', 'ring-teal-500', 'bg-teal-100');
+                });
+                drawMatchingCanvasLines();
+            }
+        }
+
+        function resetMatchingLines() {
+            matchingPairs = {};
+            selectedLeftNode = null;
+            document.querySelectorAll('.matching-node-left').forEach(el => {
+                el.classList.remove('ring-2', 'ring-teal-500', 'bg-teal-100');
+            });
+            drawMatchingCanvasLines();
+        }
+
+        function drawMatchingCanvasLines() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const container = document.getElementById('matchingContainer');
+            if (!container) return;
+
+            const containerRect = container.getBoundingClientRect();
+
+            for (const [leftId, rightId] of Object.entries(matchingPairs)) {
+                const leftEl = document.querySelector(`[data-left="${leftId}"] .w-3\\.5`);
+                const rightEl = document.querySelector(`[data-right="${rightId}"] .w-3\\.5`);
+
+                if (leftEl && rightEl) {
+                    const leftRect = leftEl.getBoundingClientRect();
+                    const rightRect = rightEl.getBoundingClientRect();
+
+                    const startX = leftRect.left + leftRect.width / 2 - containerRect.left;
+                    const startY = leftRect.top + leftRect.height / 2 - containerRect.top;
+                    const endX = rightRect.left + rightRect.width / 2 - containerRect.left;
+                    const endY = rightRect.top + rightRect.height / 2 - containerRect.top;
+
+                    ctx.beginPath();
+                    ctx.moveTo(startX, startY);
+                    ctx.lineTo(endX, endY);
+                    ctx.strokeStyle = '#0D9488';
+                    ctx.lineWidth = 3;
+                    ctx.lineCap = 'round';
+                    ctx.stroke();
+                }
+            }
+        }
+
+        /* ==================== ASSESSMENT FLOW ==================== */
+        function startAssessment() {
+            const nameInput = document.getElementById('studentNameInput').value.trim();
+            if (!nameInput) {
+                document.getElementById('nameError').classList.remove('hidden');
+                return;
+            }
+            document.getElementById('nameError').classList.add('hidden');
+            studentName = nameInput;
+            document.getElementById('displayStudentName').innerText = studentName;
+
+            document.getElementById('quizStartStep').classList.add('hidden');
+            document.getElementById('quizContentStep').classList.remove('hidden');
+
+            setTimeout(() => {
+                resizeCanvas();
+            }, 150);
+        }
+
+        function submitAssessment() {
+            let correctCount = 0;
+            const discussionList = document.getElementById('discussionList');
+            discussionList.innerHTML = '';
+
+            // 1. Evaluate Matching (1-5)
+            for (let i = 1; i <= 5; i++) {
+                const userChoice = matchingPairs[i] || '-';
+                const isCorrect = userChoice === ANSWER_KEYS.matching[i];
+                if (isCorrect) correctCount++;
+
+                appendDiscussionItem(
+                    `Soal ${i} (Matching): ${i}. ${getMatchingTitle(i)}`,
+                    isCorrect,
+                    EVALUATION_NOTES[i]
+                );
+            }
+
+            // 2. Evaluate Multiple Choice (6-10)
+            for (let i = 6; i <= 10; i++) {
+                const qName = `q${i}`;
+                const selected = document.querySelector(`input[name="${qName}"]:checked`);
+                const userChoice = selected ? selected.value : '-';
+                const isCorrect = userChoice === ANSWER_KEYS.mc[qName];
+                if (isCorrect) correctCount++;
+
+                appendDiscussionItem(
+                    `Soal ${i} (Pilihan Ganda)`,
+                    isCorrect,
+                    EVALUATION_NOTES[qName]
+                );
+            }
+
+            // 3. Evaluate True / False (11-15)
+            for (let i = 11; i <= 15; i++) {
+                const qName = `q${i}`;
+                const selected = document.querySelector(`input[name="${qName}"]:checked`);
+                const userChoice = selected ? selected.value : '-';
+                const isCorrect = userChoice === ANSWER_KEYS.tf[qName];
+                if (isCorrect) correctCount++;
+
+                appendDiscussionItem(
+                    `Soal ${i} (True/False)`,
+                    isCorrect,
+                    EVALUATION_NOTES[qName]
+                );
+            }
+
+            const finalScore = Math.round((correctCount / 15) * 100);
+
+            document.getElementById('resultStudentName').innerText = studentName;
+            document.getElementById('finalScoreDisplay').innerText = `${finalScore} / 100`;
+            document.getElementById('correctCountDisplay').innerText = `Jawaban Benar: ${correctCount} dari 15 Soal`;
+
+            if (finalScore >= 80) {
+                document.getElementById('badgeIcon').innerText = "🌟";
+                if (typeof confetti === 'function') confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+            } else if (finalScore >= 60) {
+                document.getElementById('badgeIcon').innerText = "👍";
+            } else {
+                document.getElementById('badgeIcon').innerText = "💪";
+            }
+
+            document.getElementById('quizContentStep').classList.add('hidden');
+            document.getElementById('quizResultStep').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function getMatchingTitle(id) {
+            const titles = { 1: "Tissue", 2: "Elbow", 3: "Take a bath", 4: "Comb your hair", 5: "Brush your teeth" };
+            return titles[id] || "";
+        }
+
+        function appendDiscussionItem(title, isCorrect, note) {
+            const discussionList = document.getElementById('discussionList');
+            const item = document.createElement('div');
+            item.className = `p-3 rounded-2xl border ${isCorrect ? 'bg-emerald-50 border-emerald-200' : 'bg-rose-50 border-rose-200'}`;
+            
+            item.innerHTML = `
+                <div class="flex items-center justify-between font-bold mb-1">
+                    <span class="${isCorrect ? 'text-emerald-900' : 'text-rose-900'}">${title}</span>
+                    <span class="${isCorrect ? 'text-emerald-600 bg-emerald-100' : 'text-rose-600 bg-rose-100'} px-2 py-0.5 rounded-lg text-[10px]">
+                        ${isCorrect ? '✅ BENAR' : '❌ SALAH'}
+                    </span>
+                </div>
+                ${!isCorrect ? `<p class="text-[11px] text-slate-600 mt-1">📌 <strong>Saran Evaluasi:</strong> Pelajari kembali materi: <i>${note}</i></p>` : `<p class="text-[11px] text-emerald-700">Bagus! Kamu sudah memahami bagian ini dengan baik.</p>`}
+            `;
+            discussionList.appendChild(item);
+        }
+
+        function retryAssessment() {
+            matchingPairs = {};
+            selectedLeftNode = null;
+            document.querySelectorAll('input[type="radio"]').forEach(el => el.checked = false);
+            
+            document.getElementById('quizResultStep').classList.add('hidden');
+            document.getElementById('quizStartStep').classList.remove('hidden');
+        }
+
+        window.onload = function() {
+            resizeCanvas();
+        };
+    </script>
+</body>
+</html>
